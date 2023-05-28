@@ -1,5 +1,5 @@
 import Dropdown from '../../../shared/ui/Dropdown';
-import { RATINGS } from '../consts';
+import { GENRES, RATINGS, TYPE } from '../consts';
 
 export const ConfigTemplate = () => {
   return (
@@ -7,7 +7,9 @@ export const ConfigTemplate = () => {
       <header className="text-center m-4">
         Here you can adjust config for you
       </header>
-      <Dropdown values={RATINGS} type="rating" />
+      <Dropdown values={RATINGS}>Choose rating</Dropdown>
+      <Dropdown values={TYPE}>Choose type</Dropdown>
+      <Dropdown values={GENRES}>Choose genre</Dropdown>
     </div>
   );
 };

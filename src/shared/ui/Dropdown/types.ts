@@ -1,4 +1,6 @@
+import { ReactNode } from 'react';
+
 export type OwnProps = {
   values: string[];
-  type: string;
+  children: ReactNode;
 };
