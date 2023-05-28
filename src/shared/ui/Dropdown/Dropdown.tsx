@@ -41,7 +41,7 @@ export const Dropdown: FC<OwnProps> = ({ values, children }) => {
         ></img>
       </label>
       <DropdownList
-        values={values || ''}
+        values={values}
         setDropdownValue={setDropdownValue}
         setIsList={setIsList}
         isList={isList}
