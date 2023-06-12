@@ -9,9 +9,7 @@ export const useToggle = (
       if (value === false || value) {
         setIsToggle(value);
       } else {
-        setIsToggle((state) => {
-          return !state;
-        });
+        setIsToggle(!isToggle);
       }
     },
     [isToggle],

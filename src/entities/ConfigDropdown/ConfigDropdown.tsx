@@ -4,10 +4,10 @@ import { OwnProps } from './types.ts';
 import DropdownList from './DropdownList';
 import dropdownButton from 'shared/icons/dropdown-button.svg';
 import { isEmpty } from 'shared/lib/isEmpty';
-import { useStoreContext } from 'features/hooks/useStoreContext.ts';
+import { useStoreContext } from 'shared/hooks/useStoreContext.ts';
 import { VideoTypes } from 'shared/types/types.ts';
-import { useOutsideClick } from 'features/hooks/useOutsideClick.ts';
-import { useToggle } from 'features/hooks/useToggle.ts';
+import { useOutsideClick } from 'shared/hooks/useOutsideClick.ts';
+import { useToggle } from 'shared/hooks/useToggle.ts';
 
 export const ConfigDropdown: FC<OwnProps> = ({ values, children, type }) => {
   const [dropdownValue, setDropdownValue] = useState<string | VideoTypes>('');
