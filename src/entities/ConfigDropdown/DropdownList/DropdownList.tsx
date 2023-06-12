@@ -4,12 +4,11 @@ import { OwnProps } from './types.ts';
 export const DropdownList: FC<OwnProps> = ({
   values,
   setDropdownValue,
-  setIsList,
-  isList,
+  isToggle,
 }) => {
   const listClass = `
     border border-black min-h-10 max-h-32 overflow-scroll absolute flex flex-col top-8 w-72 bg-white z-20 ${
-      isList ? '' : 'hidden'
+      isToggle ? '' : 'hidden'
     }
   `;
 
@@ -17,7 +16,6 @@ export const DropdownList: FC<OwnProps> = ({
     const target = event.target as HTMLSpanElement;
 
     setDropdownValue(target.id);
-    setIsList(false);
   };
 
   return (

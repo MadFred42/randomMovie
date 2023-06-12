@@ -1,3 +1,5 @@
+import { VideoTypes } from '../../../shared/types/types.ts';
+
 export const RATINGS: string[] = [
   '1',
   '2',
@@ -18,4 +20,4 @@ export const GENRES: string[] = [
   'War',
 ];
 
-export const TYPE: string[] = ['movie', 'show'];
+export const TYPE: string[] = [VideoTypes.Movie, VideoTypes.Show];

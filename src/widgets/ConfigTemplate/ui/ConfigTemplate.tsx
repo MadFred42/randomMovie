@@ -1,15 +1,18 @@
-import Dropdown from '../../../shared/ui/Dropdown';
-import { GENRES, RATINGS, TYPE } from '../consts';
+import ConfigDropdown from 'entities/ConfigDropdown';
+import { RATINGS, TYPE } from '../consts';
 
 export const ConfigTemplate = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-full">
+    <main className="flex flex-col justify-center items-center h-full">
       <header className="text-center m-4">
         Here you can adjust config for you
       </header>
-      <Dropdown values={RATINGS}>Choose rating</Dropdown>
-      <Dropdown values={TYPE}>Choose type</Dropdown>
-      <Dropdown values={GENRES}>Choose genre</Dropdown>
-    </div>
+      <ConfigDropdown values={RATINGS} type="rating">
+        Choose rating
+      </ConfigDropdown>
+      <ConfigDropdown values={TYPE} type="type">
+        Choose type
+      </ConfigDropdown>
+    </main>
   );
 };
