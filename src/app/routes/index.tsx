@@ -1,6 +1,6 @@
-import { ConfigPage, MoviesListPage } from '../../pages';
-import { MoviePage } from '../../pages';
-import { RandomizerPage } from '../../pages';
+import { ConfigPage, MoviesListPage } from '@/pages';
+import { MoviePage } from '@/pages';
+import { RandomizerPage } from '@/pages';
 import { RouteObject } from 'react-router-dom';
 
 export enum RouteNames {
