@@ -4,7 +4,7 @@ export enum VideoTypes {
 }
 
 export interface ConfigObject {
-  rating: string;
-  genres: string[];
-  type: VideoTypes;
+  rating: string | '';
+  genres: string[] | '';
+  type: VideoTypes | '';
 }
